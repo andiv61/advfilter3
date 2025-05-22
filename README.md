@@ -1,11 +1,3 @@
-# advfilter3
-git clone https://github.com/andiv61/andiv61.github.io
-cd andiv61.github.io
-/
-├── index.html       # Главная страница
-├── products.json    # Файл с товарами
-├── style.css        # Стили
-└── script.js        # Скрипт для загрузки товаров
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +24,8 @@ fetch('products.json')
                 </div>
             `;
         });
-    });
+    })
+    .catch(error => console.error('Ошибка:', error));
     .product-card {
     border: 1px solid #ddd;
     padding: 15px;
@@ -47,6 +40,31 @@ a {
 a:hover {
     text-decoration: underline;
 }
-git add .
-git commit -m "Добавлен каталог товаров"
-git push origin main
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+[
+    {
+        "Название": "Фильтр А",
+        "Артикул": "12345",
+        "Кросс-номера": "67890, 78901",
+        "Ссылка на andiv.ru": "https://andiv.ru/product/12345"
+    },
+    {
+        "Название": "Фильтр Б",
+        "Артикул": "67890",
+        "Кросс-номера": "12345, 88123",
+        "Ссылка на andiv.ru": "https://andiv.ru/product/67890"
+    }
+]
