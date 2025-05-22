@@ -1,4 +1,4 @@
-/* Reset стилей */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -10,12 +10,9 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
-.product-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    max-width: 300px;
+body > div#products-container > div.product-card {
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 a {
     color: #0066cc;
