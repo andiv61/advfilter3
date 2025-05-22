@@ -1,3 +1,15 @@
+/* Reset стилей */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
 .product-card {
     border: 1px solid #ddd;
     padding: 15px;
